@@ -14,8 +14,8 @@ class DataFrameInfo:
     def summarise_numeric(self):
         print (f"The dataframe has these numeric datatypes, with these summary statistics")
         ##########print (self.df.describe())
-        summary= self.df.describe()
-        display (summary.transpose())
+        summary = self.df.describe()
+        display(summary.transpose())
         #print (self.df.describe.transpose())
 
     def count_categories(self):
@@ -27,5 +27,5 @@ class DataFrameInfo:
                 print ("-----------------------------------")
     
     def count_nulls (self):
-        #print("percentage of missing values in each column:")
-        display(df.isna().mean() * 100 )
+        print("percentage of missing values in each column:")
+        print(self.df.isna().mean() * 100 )

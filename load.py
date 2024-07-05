@@ -1,9 +1,12 @@
 import pandas as pd
 
-def load_data():
-    dataframe = pd.read_csv('initial_data.csv')
+def load_data(filename):
+    dataframe = pd.read_csv(filename)
     return dataframe
 
+'''
 df = load_data()
 
-print (df.shape)
+df.info()
+
+'''
